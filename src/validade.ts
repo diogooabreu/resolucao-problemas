@@ -1,4 +1,4 @@
-export class Validade {
+export class Validity {
     private static readonly Day = 12;
     private static readonly Month = 5;
     private static readonly Year = 2012;
@@ -14,21 +14,18 @@ export class Validade {
     }
 
     public validity(): string {
-        if (this.validYear > Validade.Year) {
-            return "Is not expired!!";
-        } else if (this.validYear < Validade.Year) {
-            return "Is expired!!"
-        } else {
-            if (this.validMonth < Validade.Month) {
-                return "Is expired!!";
-            } else if (this.validMonth > Validade.Month) {
-                return "Is Not expired!!";
-            } else {
-                if (this.validDay <= Validade.Day) {
-                    return "Is expired!!";
-                }
-                return "Is not expired!!";
-            }
-        }
+        if (this.validYear > Validity.Year)
+            return `Is not expired.`;
+        if (this.validYear < Validity.Year)
+            return `Expired!`;
+        if (this.validMonth < Validity.Month)
+            return `Expired!!`;
+        if (this.validDay < Validity.Day)
+            return `Is expired!!!!`;
+        return `Is not expired.`
+
     }
 }
+
+
+
