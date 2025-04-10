@@ -8,7 +8,7 @@ export default class Primo {
     public isPrimo() {
         if (this.num <= 1)
             return `Não é primo`;
-        for (let i = 2; i < Math.sqrt(this.num); i++)
+        for (let i = 2; i <= Math.sqrt(this.num); i++)
                 if (this.num % i == 0)
                     return `Não é primo`;
         
