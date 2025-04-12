@@ -4,17 +4,14 @@ export default class Primos {
 
     public constructor(n: number) {
         this.n = n;
-        this.primosAntes(); 
+        this.primosAteN(); 
     }
 
-    //método get pra poder capturar o valor no console.log
     public getPrimos(): number[] {
         return this.primos;
     }
 
-    //método pra ir ierando de 3 até n, passando só pelos impares
-    //a cada nova iteração eu faço uma chamada da função que verifica se o contador(j) é primo, ele é passado como parâmetro
-    public primosAntes(): number[] {
+    public primosAteN(): number[] {
         for (let j = 3; j < this.n; j += 2){
             if (this.isPrimo(j))
                 this.primos.push(j);
@@ -22,8 +19,6 @@ export default class Primos {
         return this.primos;
     }
 
-    //Aqui eu faço a verificação pra validar se numero x é primo ou não
-    //recebo o j como parâmetro
     public isPrimo(j: number): boolean {
         let raiz = Math.sqrt(j);
 

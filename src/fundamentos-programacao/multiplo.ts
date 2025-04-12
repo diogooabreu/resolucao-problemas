@@ -15,3 +15,9 @@ export default class Multiplo {
 }
 
 
+let test1 = new Multiplo(10, 2);
+console.log(test1.verifica()); 
+let test2 = new Multiplo(1000, 2);
+console.log(test2.verifica()); 
+let test3 = new Multiplo(5, 21);
+console.log(test3.verifica()); 
