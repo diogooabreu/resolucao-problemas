@@ -1,0 +1,6 @@
+    Pilhas, ou Stacks
+São um modelo de estrutura de dados que segue o principio 'lifo' (Last In, Fisrt Out), o primeiro elemento a entrar é o último a sair, e o último a entrar é o primeiro a sair.
+Sempre seguirá essa ordem.
+
+    Filas, ou 'queues'
+Modelo de estrutura de dados que segue o principio FiFo (FirstIn, FisrtOut)
